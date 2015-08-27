@@ -1,7 +1,3 @@
-# groupAvatar
-
-<p><markdown>
-#Markdown Live Editor#
 #Hi#
 
 This is a code to clip UIImage by mask with another one. 
@@ -13,9 +9,7 @@ This is a code to clip UIImage by mask with another one.
 3rd, you can also call the advanced method to merge the cliped ones together.<br>
 
 ###Sample images###
-<br/>
-<img src="https://github.com/chenguohao/groupAvatar/blob/master/sample.png"/>
-<br/>
+![alt text][4]
 
 ###Writting code ###
 
@@ -25,9 +19,7 @@ This is a code to clip UIImage by mask with another one.
     UIImage* clipedimg = [UIImage maskClipImage:rawimage withMaskImage:maskimge];
 
 ###Sample images###
-<br/>
-<img src="https://github.com/chenguohao/groupAvatar/blob/master/sample.png"/>
-<br/>
+![alt text][4]
 ###Writting code ###
     #advanced Usage
     NSMutableArray* marray = [NSMutableArray new];
@@ -41,4 +33,3 @@ This is a code to clip UIImage by mask with another one.
 To learn more about markdown click [here][1]
 
 [1]: http://blog.csdn.net/leo_master/article/details/48023191
-</markdown></p>
