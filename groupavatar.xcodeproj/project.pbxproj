@@ -79,6 +79,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		230A83FA1B8EEB9700AAC333 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				230A83FC1B8EEBD200AAC333 /* Mask */,
+				230A83FB1B8EEBA500AAC333 /* RawImages */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+		230A83FB1B8EEBA500AAC333 /* RawImages */ = {
+			isa = PBXGroup;
+			children = (
+				2316E9601B8DC8B9002B3B80 /* 1.jpg */,
+				2316E9611B8DC8B9002B3B80 /* 2.jpg */,
+				2316E9621B8DC8B9002B3B80 /* 3.jpg */,
+				2316E9631B8DC8B9002B3B80 /* 4.jpg */,
+				2316E9641B8DC8B9002B3B80 /* 5.jpg */,
+				2316E9651B8DC8B9002B3B80 /* 0.jpg */,
+			);
+			name = RawImages;
+			sourceTree = "<group>";
+		};
+		230A83FC1B8EEBD200AAC333 /* Mask */ = {
+			isa = PBXGroup;
+			children = (
+				230A83F81B8EE36800AAC333 /* hexagon.png */,
+				23E929A91A8DE58B001139FA /* maskclip.png */,
+			);
+			name = Mask;
+			sourceTree = "<group>";
+		};
 		23E929661A8DE185001139FA = {
 			isa = PBXGroup;
 			children = (
@@ -104,17 +135,10 @@
 				23E929771A8DE185001139FA /* AppDelegate.m */,
 				23E929791A8DE185001139FA /* ViewController.h */,
 				23E9297A1A8DE185001139FA /* ViewController.m */,
-				2316E9601B8DC8B9002B3B80 /* 1.jpg */,
-				2316E9611B8DC8B9002B3B80 /* 2.jpg */,
-				2316E9621B8DC8B9002B3B80 /* 3.jpg */,
-				2316E9631B8DC8B9002B3B80 /* 4.jpg */,
-				2316E9641B8DC8B9002B3B80 /* 5.jpg */,
-				2316E9651B8DC8B9002B3B80 /* 0.jpg */,
-				230A83F81B8EE36800AAC333 /* hexagon.png */,
+				230A83FA1B8EEB9700AAC333 /* Resource */,
 				23E9297C1A8DE185001139FA /* Main.storyboard */,
 				23E929981A8DE1A1001139FA /* UIImageEx.h */,
 				23E929991A8DE1A1001139FA /* UIImageEx.m */,
-				23E929A91A8DE58B001139FA /* maskclip.png */,
 				23E9297F1A8DE185001139FA /* Images.xcassets */,
 				23E929811A8DE185001139FA /* LaunchScreen.xib */,
 				23E929721A8DE185001139FA /* Supporting Files */,
