@@ -9,8 +9,9 @@ This is a code to clip UIImage by mask with another one.
 3rd, you can also call the advanced method to merge the cliped ones together.<br>
 
 ###Sample images###
-![alt text][4]
-
+<br/>
+<img src="https://github.com/chenguohao/groupAvatar/blob/master/sample1.png"/>
+<br/>
 ###Writting code ###
 
     #clip image with mask
@@ -19,7 +20,9 @@ This is a code to clip UIImage by mask with another one.
     UIImage* clipedimg = [UIImage maskClipImage:rawimage withMaskImage:maskimge];
 
 ###Sample images###
-![alt text][4]
+<br/>
+<img src="https://github.com/chenguohao/groupAvatar/blob/master/sample2.png"/>
+<br/>
 ###Writting code ###
     #advanced Usage
     NSMutableArray* marray = [NSMutableArray new];
