@@ -7,9 +7,8 @@
 
 @interface UIImage (maskClip)
 
-//原图获取大图接口
 
 + (UIImage *) mergeImages:(NSArray *)imageArray;
-
++ (UIImage*)maskClipImage:(UIImage *)image angle:(double)angle;
 @end
 

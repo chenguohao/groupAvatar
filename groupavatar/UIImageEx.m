@@ -1,22 +1,13 @@
-//
-//  UIImage-icon.m
-//  CallShow
-//
-//  Created by sugar chen on 09-4-14.
-//  Copyright 2009 __MyCompanyName__. All rights reserved.
-//
+
 
 #import "UIImageEx.h"
 #import <QuartzCore/QuartzCore.h>
 #import <Accelerate/Accelerate.h>
 
-#define SHORT_SIDE  33
-#define LONG_SIDE   99
 
-#define DEGREES_TO_RADIANS(d) ((d) * 0.0174532925199432958f)
+
 #define HEADFACE_SIZE			50
 
-#define RADIANS(degrees) ((degrees * M_PI) / 180.0)
 
 @implementation UIImage(maskClip)
 
@@ -62,7 +53,6 @@
     int bg_height = HEADFACE_SIZE;
     int scale =  8;
     
-    // 只有一个头像，则直接返回这张头像
     if (imageCount == 1) {
         image = imageArray.firstObject;
     }
@@ -71,7 +61,6 @@
         float head_s = 1;
         NSMutableArray *rectArray = [NSMutableArray arrayWithCapacity:6];
         double startAngel = 0;
-        // 设定不同头像个数时，头像的大小、绘制位置以及切割缺角的位置，由于不是完成对称的，所以这里都写死坐标
         if (imageCount == 2) {
             head_s = 30;
             CGRect rcImage = CGRectMake(0, (bg_height - head_s) * scale, head_s * scale, head_s * scale);
@@ -149,7 +138,6 @@
             UIImage *image_inx = [imageArray objectAtIndex:j];
             if (imageCount > 2 || j == 0) {
                 double angel = startAngel - 2 * j * M_PI / imageCount;
-                // 微调6个头像时切缺角的角度
                 if (imageCount == 6) {
                     if (j == 3) {
                         angel -= 2 * M_PI * 1 / 360;
@@ -158,7 +146,6 @@
                         angel += 2 * M_PI * 2 / 360;
                     }
                 }
-                // 微调5个头像时切缺角的角度
                 else if (imageCount == 5 && j == 3) {
                     angel += 2 * M_PI * 2 / 360;
                 }
