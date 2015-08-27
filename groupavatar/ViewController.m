@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "SGUIImageEx.h"
+#import "UIImageEx.h"
 @interface ViewController ()
 
 @end
@@ -27,7 +27,7 @@
     NSArray* imageAry = [NSArray arrayWithArray:marray];
     UIImage* img = [UIImage imageNamed:@"2.png"];
     UIImage *headImage = nil;
-    headImage = [UIImage mergeGridsImageLT2RB:imageAry];
+    headImage = [UIImage mergeImages:imageAry];
     //headImage = [UIImage roundClipImageWithSize:img angle:40];
     
 //    CGColorSpaceRef colorSpace;

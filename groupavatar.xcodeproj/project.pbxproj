@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		230A83F71B8DF0D300AAC333 /* Greatebg.png in Resources */ = {isa = PBXBuildFile; fileRef = 230A83F61B8DF0D300AAC333 /* Greatebg.png */; };
 		2316E9661B8DC8B9002B3B80 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2316E9601B8DC8B9002B3B80 /* 1.jpg */; };
 		2316E9671B8DC8B9002B3B80 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2316E9611B8DC8B9002B3B80 /* 2.jpg */; };
 		2316E9681B8DC8B9002B3B80 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2316E9621B8DC8B9002B3B80 /* 3.jpg */; };
@@ -23,9 +22,8 @@
 		23E929801A8DE185001139FA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23E9297F1A8DE185001139FA /* Images.xcassets */; };
 		23E929831A8DE185001139FA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23E929811A8DE185001139FA /* LaunchScreen.xib */; };
 		23E9298F1A8DE185001139FA /* groupavatarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 23E9298E1A8DE185001139FA /* groupavatarTests.m */; };
-		23E9299A1A8DE1A1001139FA /* SGUIImageEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 23E929991A8DE1A1001139FA /* SGUIImageEx.m */; };
-		23E929AA1A8DE58B001139FA /* chat_mask_clip_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 23E929A91A8DE58B001139FA /* chat_mask_clip_normal.png */; };
-		23E929AC1A8DE634001139FA /* talk_avatar_default.png in Resources */ = {isa = PBXBuildFile; fileRef = 23E929AB1A8DE634001139FA /* talk_avatar_default.png */; };
+		23E9299A1A8DE1A1001139FA /* UIImageEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 23E929991A8DE1A1001139FA /* UIImageEx.m */; };
+		23E929AA1A8DE58B001139FA /* maskclip.png in Resources */ = {isa = PBXBuildFile; fileRef = 23E929A91A8DE58B001139FA /* maskclip.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +37,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		230A83F61B8DF0D300AAC333 /* Greatebg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Greatebg.png; sourceTree = "<group>"; };
 		2316E9601B8DC8B9002B3B80 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
 		2316E9611B8DC8B9002B3B80 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
 		2316E9621B8DC8B9002B3B80 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
@@ -61,11 +58,10 @@
 		23E929881A8DE185001139FA /* groupavatarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = groupavatarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		23E9298D1A8DE185001139FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		23E9298E1A8DE185001139FA /* groupavatarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = groupavatarTests.m; sourceTree = "<group>"; };
-		23E929981A8DE1A1001139FA /* SGUIImageEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGUIImageEx.h; sourceTree = "<group>"; };
-		23E929991A8DE1A1001139FA /* SGUIImageEx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGUIImageEx.m; sourceTree = "<group>"; };
+		23E929981A8DE1A1001139FA /* UIImageEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageEx.h; sourceTree = "<group>"; };
+		23E929991A8DE1A1001139FA /* UIImageEx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageEx.m; sourceTree = "<group>"; };
 		23E929A81A8DE3DD001139FA /* QOsDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QOsDefine.h; sourceTree = "<group>"; };
-		23E929A91A8DE58B001139FA /* chat_mask_clip_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chat_mask_clip_normal.png; sourceTree = "<group>"; };
-		23E929AB1A8DE634001139FA /* talk_avatar_default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = talk_avatar_default.png; sourceTree = "<group>"; };
+		23E929A91A8DE58B001139FA /* maskclip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = maskclip.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,7 +108,6 @@
 				23E929791A8DE185001139FA /* ViewController.h */,
 				23E9297A1A8DE185001139FA /* ViewController.m */,
 				2316E9601B8DC8B9002B3B80 /* 1.jpg */,
-				230A83F61B8DF0D300AAC333 /* Greatebg.png */,
 				2316E9611B8DC8B9002B3B80 /* 2.jpg */,
 				2316E9621B8DC8B9002B3B80 /* 3.jpg */,
 				2316E9631B8DC8B9002B3B80 /* 4.jpg */,
@@ -122,10 +117,9 @@
 				2348C6E91AE920CC00D12652 /* sixstarbg.png */,
 				23E9297C1A8DE185001139FA /* Main.storyboard */,
 				23E929A81A8DE3DD001139FA /* QOsDefine.h */,
-				23E929981A8DE1A1001139FA /* SGUIImageEx.h */,
-				23E929991A8DE1A1001139FA /* SGUIImageEx.m */,
-				23E929A91A8DE58B001139FA /* chat_mask_clip_normal.png */,
-				23E929AB1A8DE634001139FA /* talk_avatar_default.png */,
+				23E929981A8DE1A1001139FA /* UIImageEx.h */,
+				23E929991A8DE1A1001139FA /* UIImageEx.m */,
+				23E929A91A8DE58B001139FA /* maskclip.png */,
 				23E9297F1A8DE185001139FA /* Images.xcassets */,
 				23E929811A8DE185001139FA /* LaunchScreen.xib */,
 				23E929721A8DE185001139FA /* Supporting Files */,
@@ -240,13 +234,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2316E9691B8DC8B9002B3B80 /* 4.jpg in Resources */,
-				23E929AA1A8DE58B001139FA /* chat_mask_clip_normal.png in Resources */,
+				23E929AA1A8DE58B001139FA /* maskclip.png in Resources */,
 				2316E96B1B8DC8B9002B3B80 /* 6.jpg in Resources */,
 				23E9297E1A8DE185001139FA /* Main.storyboard in Resources */,
-				23E929AC1A8DE634001139FA /* talk_avatar_default.png in Resources */,
 				2316E9671B8DC8B9002B3B80 /* 2.jpg in Resources */,
 				2348C6EA1AE920CC00D12652 /* sixstarbg.png in Resources */,
-				230A83F71B8DF0D300AAC333 /* Greatebg.png in Resources */,
 				2316E9681B8DC8B9002B3B80 /* 3.jpg in Resources */,
 				23E929831A8DE185001139FA /* LaunchScreen.xib in Resources */,
 				2316E9661B8DC8B9002B3B80 /* 1.jpg in Resources */,
@@ -270,7 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23E9299A1A8DE1A1001139FA /* SGUIImageEx.m in Sources */,
+				23E9299A1A8DE1A1001139FA /* UIImageEx.m in Sources */,
 				23E9297B1A8DE185001139FA /* ViewController.m in Sources */,
 				23E929781A8DE185001139FA /* AppDelegate.m in Sources */,
 				23E929751A8DE185001139FA /* main.m in Sources */,

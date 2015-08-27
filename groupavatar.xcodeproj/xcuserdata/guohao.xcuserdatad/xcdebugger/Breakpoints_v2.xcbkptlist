@@ -9,12 +9,12 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "groupavatar/SGUIImageEx.m"
-            timestampString = "462288692.7376"
+            filePath = "groupavatar/UIImageEx.m"
+            timestampString = "462335994.024579"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "61"
-            endingLineNumber = "61"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
             landmarkName = "+rotate:angle:"
             landmarkType = "5">
          </BreakpointContent>
@@ -25,13 +25,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "groupavatar/SGUIImageEx.m"
-            timestampString = "462287635.336294"
+            filePath = "groupavatar/UIImageEx.m"
+            timestampString = "462335994.024579"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
-            landmarkName = "+roundClipImageWithSize:angle:"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "+maskClipImage:angle:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

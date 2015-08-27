@@ -6,7 +6,7 @@
 //  Copyright 2009 __MyCompanyName__. All rights reserved.
 //
 
-#import "SGUIImageEx.h"
+#import "UIImageEx.h"
 #import <QuartzCore/QuartzCore.h>
 #import <Accelerate/Accelerate.h>
 
@@ -18,24 +18,18 @@
 
 #define RADIANS(degrees) ((degrees * M_PI) / 180.0)
 
-@implementation UIImage(UIImageDataExpress)
+@implementation UIImage(maskClip)
 
-+ (UIImage*)roundClipImageWithSize:(UIImage *)image angle:(double)angle
-{
++ (UIImage*)maskClipImage:(UIImage *)image angle:(double)angle{
     CGSize size = image.size;
-    
     UIGraphicsBeginImageContextWithOptions(size, NO, 0);
-    // 先画图片
+   
     [image drawInRect:CGRectMake(0, 0, size.width, size.height)];
-    
-    UIImage* mask = [UIImage imageNamed:@"chat_mask_clip_normal.png"];
+    UIImage* mask = [UIImage imageNamed:@"maskclip.png"];
     UIImage* rotatedmask = [UIImage rotate:mask angle:angle];
     CGContextRef ctx = UIGraphicsGetCurrentContext();
     CGContextMoveToPoint(ctx, size.width / 2, size.height / 2);
     CGContextTranslateCTM(ctx, size.width / 2, size.height / 2);
-    
-
-//    
     [rotatedmask drawInRect:CGRectMake(-size.width / 2, -size.width / 2, size.width, size.width) blendMode:kCGBlendModeDestinationIn alpha:1];
     
     UIImage* retImage = UIGraphicsGetImageFromCurrentImageContext();
@@ -57,12 +51,10 @@
     [image drawInRect:CGRectMake(0, 0, size.width, size.height)];
     UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
-    
     return newImage;
 }
 
-+ (UIImage *) mergeGridsImageLT2RB:(NSArray *)imageArray
-{
++ (UIImage *) mergeImages:(NSArray *)imageArray{
     UIImage *image = nil;
     NSUInteger maxHeadImgCount = CGRectGetHeight([UIScreen mainScreen].bounds) > 480.0f ? 6 : 4;
     NSUInteger imageCount = MIN([imageArray count], maxHeadImgCount);
@@ -170,38 +162,11 @@
                 else if (imageCount == 5 && j == 3) {
                     angel += 2 * M_PI * 2 / 360;
                 }
-                image_inx = [self roundClipImageWithSize:image_inx angle:angel];
+                image_inx = [self maskClipImage:image_inx angle:angel];
             }
             CGRect rcImage = [[rectArray objectAtIndex:j] CGRectValue];
             CGContextDrawImage(context, rcImage, image_inx.CGImage);
         }
-        
-        CGImageRef imageRef = CGBitmapContextCreateImage(context);
-        CGContextRelease(context);
-        
-        image = [UIImage imageWithCGImage:imageRef scale:scale orientation:UIImageOrientationUp];
-        
-        if ( imageRef )
-        {
-            CGImageRelease(imageRef);
-        }
-    }
-    else
-    {
-        CGColorSpaceRef colorSpace;
-        colorSpace = CGColorSpaceCreateDeviceRGB();
-        CGContextRef context = CGBitmapContextCreate (NULL,
-                                                      bg_width*scale, bg_height*scale,
-                                                      8,0, colorSpace, kCGImageAlphaPremultipliedLast);
-        CGColorSpaceRelease(colorSpace);
-        
-        UIColor * color = [UIColor clearColor];
-        CGContextSetFillColorWithColor(context, color.CGColor);
-        
-        UIImage *icon = [UIImage imageNamed:@"talk_avatar_default"];
-        int x_off = (bg_width - icon.size.width) * scale / 2;
-        int y_off = (bg_height - icon.size.height) * scale / 2;
-        CGContextDrawImage(context, CGRectMake(x_off, y_off, icon.size.width*scale, icon.size.height*scale), icon.CGImage);
         
         CGImageRef imageRef = CGBitmapContextCreateImage(context);
         CGContextRelease(context);
