@@ -11,17 +11,30 @@
 
 @implementation UIImage(maskClip)
 
++ (UIImage*)maskClipImage:(UIImage *)image withMaskImage:(UIImage*)maskimg{
+    CGSize size = image.size;
+    UIGraphicsBeginImageContextWithOptions(size, NO, 0);
+    
+    [image drawInRect:CGRectMake(0, 0, size.width, size.height)];
+    [maskimg drawInRect:CGRectMake(0, 0, size.width, size.width) blendMode:kCGBlendModeDestinationIn alpha:1];
+    
+    UIImage* retImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return retImage;
+}
+
 + (UIImage*)maskClipImage:(UIImage *)image angle:(double)angle{
     CGSize size = image.size;
     UIGraphicsBeginImageContextWithOptions(size, NO, 0);
    
     [image drawInRect:CGRectMake(0, 0, size.width, size.height)];
     UIImage* mask = [UIImage imageNamed:@"maskclip.png"];
-    UIImage* rotatedmask = [UIImage rotate:mask angle:angle];
-    CGContextRef ctx = UIGraphicsGetCurrentContext();
-    CGContextMoveToPoint(ctx, size.width / 2, size.height / 2);
-    CGContextTranslateCTM(ctx, size.width / 2, size.height / 2);
-    [rotatedmask drawInRect:CGRectMake(-size.width / 2, -size.width / 2, size.width, size.width) blendMode:kCGBlendModeDestinationIn alpha:1];
+    
+    if (angle) {
+        mask = [UIImage rotate:mask angle:angle];
+    }
+    
+    [mask drawInRect:CGRectMake(0, 0, size.width, size.width) blendMode:kCGBlendModeDestinationIn alpha:1];
     
     UIImage* retImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();

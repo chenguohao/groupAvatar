@@ -6,9 +6,7 @@
 
 
 @interface UIImage (maskClip)
-
-
-+ (UIImage *) mergeImages:(NSArray *)imageArray;
-+ (UIImage*)maskClipImage:(UIImage *)image angle:(double)angle;
++ (UIImage *)mergeImages:(NSArray *)imageArray;
++ (UIImage*)maskClipImage:(UIImage *)image withMaskImage:(UIImage*)maskimg;
 @end
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		230A83F91B8EE36800AAC333 /* hexagon.png in Resources */ = {isa = PBXBuildFile; fileRef = 230A83F81B8EE36800AAC333 /* hexagon.png */; };
 		2316E9661B8DC8B9002B3B80 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2316E9601B8DC8B9002B3B80 /* 1.jpg */; };
 		2316E9671B8DC8B9002B3B80 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2316E9611B8DC8B9002B3B80 /* 2.jpg */; };
 		2316E9681B8DC8B9002B3B80 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2316E9621B8DC8B9002B3B80 /* 3.jpg */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		230A83F81B8EE36800AAC333 /* hexagon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hexagon.png; sourceTree = "<group>"; };
 		2316E9601B8DC8B9002B3B80 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
 		2316E9611B8DC8B9002B3B80 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
 		2316E9621B8DC8B9002B3B80 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				2316E9631B8DC8B9002B3B80 /* 4.jpg */,
 				2316E9641B8DC8B9002B3B80 /* 5.jpg */,
 				2316E9651B8DC8B9002B3B80 /* 0.jpg */,
+				230A83F81B8EE36800AAC333 /* hexagon.png */,
 				23E9297C1A8DE185001139FA /* Main.storyboard */,
 				23E929A81A8DE3DD001139FA /* QOsDefine.h */,
 				23E929981A8DE1A1001139FA /* UIImageEx.h */,
@@ -237,6 +240,7 @@
 				2316E9661B8DC8B9002B3B80 /* 1.jpg in Resources */,
 				2316E96A1B8DC8B9002B3B80 /* 5.jpg in Resources */,
 				23E929801A8DE185001139FA /* Images.xcassets in Resources */,
+				230A83F91B8EE36800AAC333 /* hexagon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
