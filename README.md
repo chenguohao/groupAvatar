@@ -1,6 +1,6 @@
 #Hi#
 
-This is a code to clip UIImage by mask with another one. 
+This is a code to clip UIImage by mask. 
 
 ##Usage##
 
@@ -12,7 +12,7 @@ This is a code to clip UIImage by mask with another one.
 <br/>
 <img src="https://github.com/chenguohao/groupAvatar/blob/master/sample1.png"/>
 <br/>
-###Writting code ###
+###Code ###
 
     #clip image with mask
     UIImage* rawimage = [UIImage imageNamed:@"0.jpg"];
@@ -23,7 +23,7 @@ This is a code to clip UIImage by mask with another one.
 <br/>
 <img src="https://github.com/chenguohao/groupAvatar/blob/master/sample2.png"/>
 <br/>
-###Writting code ###
+###Code ###
     #advanced Usage
     NSMutableArray* marray = [NSMutableArray new];
     for (int i = 0; i < 6; i++) {
