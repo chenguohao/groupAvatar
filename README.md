@@ -33,6 +33,6 @@ This is a code to clip UIImage by mask.
     }
     NSArray* imageAry = [NSArray arrayWithArray:marray];
     UIImage *headImage = [UIImage mergeImages:imageAry];
-To learn more about markdown click [here][1]
+To learn more about this click [here][1]
 
 [1]: http://blog.csdn.net/leo_master/article/details/48023191
